@@ -15,8 +15,10 @@ Our team have 5 members and we currently students in National Economics Universi
 # Database
 
 ## Entity Relationship Diagram (ERD)
+https://dbdiagram.io/d/631d5fe30911f91ba57f9ae4
 
-## Create DB 
+![database](https://user-images.githubusercontent.com/97270032/189512108-03c7b44f-f508-4087-ad96-4efc6dfe6db6.png)
+
 
 
 ## Backend:
