@@ -1,13 +1,22 @@
 # AT-Team-She-Codes-2022
 
-## Công nghệ sử dụng
+<div align="center">
+  <h1 style="color:#F3EB3B;"> Hi guy~ <img src="https://pic.chinesefontdesign.com/uploads/2017/11/chinesefontdesign.com-2017-11-16_10-37-52_166289.gif" width="75px"></h1>
+</div>
+
+## About us:
+Our team have 5 members and we currently students in National Economics University
+
+## Tech stack
 1. Front-end: HTML, CSS (Bootstrap), JavaScript (ReactJs)
 2. Back-end: Python (flask)
 3. Database: Mysql
 
 # Database
 
-## Thiết kế database
+## Entity Relationship Diagram (ERD)
+
+## Create DB 
 
 
 ## Backend:
