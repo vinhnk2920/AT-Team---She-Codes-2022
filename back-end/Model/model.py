@@ -54,6 +54,27 @@ class User(BaseModel):
         table_name = "users"
 
 
+class MonthlyReward(BaseModel):
+    id = IntegerField()
+    award_id = IntegerField()
+    achiever_id = IntegerField()
+    created_at = DateField()
+
+    class Meta:
+        table_name = "monthly_rewards"
+
+
+class Awards(BaseModel):
+    id = IntegerField()
+    code = CharField()
+    name = CharField()
+    type = IntegerField()
+    title_img = CharField()
+
+    class Meta:
+        table_name = "awards"
+
+
 class Team(BaseModel):
     id = IntegerField()
     code = CharField()
