@@ -38,3 +38,26 @@ class Project(BaseModel):
 
     class Meta:
         table_name = "projects"
+
+
+class User(BaseModel):
+    id = IntegerField()
+    username = CharField()
+    full_name = CharField()
+    avatar = CharField()
+    role = IntegerField()
+    team_id = IntegerField()
+    created_by = IntegerField()
+    updated_by = IntegerField()
+
+    class Meta:
+        table_name = "users"
+
+
+class Team(BaseModel):
+    id = IntegerField()
+    code = CharField()
+    name = CharField()
+
+    class Meta:
+        table_name = "teams"

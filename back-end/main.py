@@ -7,7 +7,7 @@ import jwt
 from flask import Flask, request, jsonify, make_response, json
 from werkzeug.security import check_password_hash, generate_password_hash
 
-from Model.model import LoginInformation, MemberOfProject, Project, Quote
+from Model.model import LoginInformation, MemberOfProject, Project, Quote, User, Team
 
 app = Flask(__name__)
 
@@ -121,6 +121,7 @@ def signup():
         })
 
 
+# API get quote
 @app.route('/quotes/get', methods=['GET'])
 def get_quote():
     try:
@@ -145,10 +146,32 @@ def get_quote():
         })
 
 
+# API get member of team
+@app.route('/team/members')
+@token_required
+def get_team_member(user_id):
+    try:
+        params = request.json
+        members = User.select(Team.name, User.id, User.username, User.avatar).join(Team, on=(User.team_id == Team.id))\
+            .where(Team.id == params['team_id']).dicts()
+        return json.jsonify({
+            'success': True,
+            'message': 'Get members of team successfully!',
+            'data': list(members)
+        })
+    except Exception as e:
+        print(e)
+        return json.jsonify({
+            'success': False,
+            'message': 'Fail to get members of team!',
+            'data': []
+        })
+
 # users
 @app.route('/users/projects', methods=['GET'])
 @token_required
 def get_user_project(user_id):
+    params = request.json
     try:
         projects = MemberOfProject.select(MemberOfProject.shop_code) \
             .join(Project, on=(Project.id == MemberOfProject.project_id)) \
