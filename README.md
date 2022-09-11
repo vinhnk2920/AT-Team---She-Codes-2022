@@ -12,7 +12,7 @@ Our team have 5 members and we currently students in National Economics Universi
 2. Back-end: Python (flask)
 3. Database: Mysql
 
-# Database
+## Database
 
 ## Entity Relationship Diagram (ERD)
 https://dbdiagram.io/d/631d5fe30911f91ba57f9ae4
@@ -20,6 +20,8 @@ https://dbdiagram.io/d/631d5fe30911f91ba57f9ae4
 ![database](https://user-images.githubusercontent.com/97270032/189512108-03c7b44f-f508-4087-ad96-4efc6dfe6db6.png)
 
 
-
 ## Backend:
 Collection postman: https://www.getpostman.com/collections/c95700d339a157d56dcb
+
+## Link figma:
+https://www.figma.com/proto/8V6vg2kdjEHvaGPZf8ULhu/AT?node-id=86%3A10679&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=14%3A326
