@@ -235,6 +235,28 @@ def get_reward_of_month(user_id):
         })
 
 
+@app.route('/users/profile', methods=['GET'])
+@token_required
+def get_user_profile(user_id):
+    params = request.json
+    try:
+        users = User.select(User.id, User.username, User.full_name, User.avatar, Team.name) \
+            .join(Team, on=(User.team_id == Team.id)).where(User.id == params['user_id']).dicts()
+        print(users)
+        return json.jsonify({
+            'success': True,
+            'message': 'Get user successfully!',
+            'data': list(users)
+        })
+    except Exception as e:
+        print(e)
+        return json.jsonify({
+            'success': True,
+            'message': 'Fail to get user successfully!',
+            'data': []
+        })
+
+
 API_HANDLE_HOST = os.getenv('NGINX_VHOST', '127.0.0.1')
 API_HANDLE_PORT = os.getenv('NGINX_PORT', 5000)
 
