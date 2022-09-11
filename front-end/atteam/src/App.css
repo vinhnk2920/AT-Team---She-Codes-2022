@@ -1,0 +1,138 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.All-page {
+  /* display: flex; */
+}
+
+.login-left {
+  /* background-color: #013046; */
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  background: #013046;
+  text-align: center;
+  align-items: center;
+  /* border-radius: 20px 0px 0px 20px; */
+}
+
+.login-left-content {
+  position: absolute;
+  width: 80% !important;
+  height: 70%;
+  left: 20%;
+  top: 15%;
+  background: #D8F2FE;
+  box-shadow: -10px 4px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 35px 0px 0px 35px;
+  justify-content: center;
+}
+
+.login-right {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  left: 50%;
+  top: 0px;
+  right: 0%;
+  background: #D8F2FE;
+  /* border-radius: 0px 20px 20px 0px; */
+}
+
+.login-right-content {
+  position: absolute;
+  width: 80% !important;
+  height: 70%;
+  left: 0%;
+  top: 15%;
+
+  background: #FFFDF3;
+  border-radius: 0px 35px 35px 0px;
+}
+
+.img-login-left {
+  height: 35%;
+  width: auto;
+}
+
+.paragraph {
+  margin-top: 5%;
+  font-family:'Combo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 96px;
+  /* or 200% */
+
+  text-align: center;
+}
+.img-login-right{
+  height: 65%;
+  width: auto;
+  margin-left: 10%;
+}
+
+.welcome{
+  margin-top: -5%;
+  font-weight: bold;
+}
+
+.form{
+  text-align: left;
+  width: 60%;
+  margin-left: 20%;
+  /* margin-top: -10%; */
+}
+
+.label-login{
+  font-weight: bold;
+}
+
+.btn-login{
+  width: 100%;
+  margin-top: 5%;
+  background-color: #1F9EBC !important;
+}
+
+.logo-header{
+  width: 5%;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
