@@ -1,8 +1,6 @@
 # AT-Team-She-Codes-2022
 
-[[TOC]]
-
-# Công nghệ sử dụng
+## Công nghệ sử dụng
 1. Front-end: HTML, CSS (Bootstrap), JavaScript (ReactJs)
 2. Back-end: Python (flask)
 3. Database: Mysql
